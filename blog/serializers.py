@@ -14,13 +14,14 @@ class CategorySerializer(serializers.ModelSerializer):
 class BlogSerializer(serializers.ModelSerializer):
     category = serializers.StringRelatedField()
     category_id = serializers.IntegerField(write_only=True)
+
     class Meta:
         model = Blog
         fields = (
             'id',
             'title',
             'content',
-            'category_id'
+            'category_id',
             'category',
             'created_date',
             'is_published',
