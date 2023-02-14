@@ -20,4 +20,4 @@ def run():
                                 title=fake.name(), content=fake.text())
 
     print('Finished')
-    # 1:36
+  
