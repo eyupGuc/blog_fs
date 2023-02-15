@@ -7,7 +7,7 @@ class RegisterView(CreateAPIView):
     queryset =User.objects.all()
     serializer_class = RegistrationSerializer
     
-# 3:11 kaldım.
+
     
     
 
